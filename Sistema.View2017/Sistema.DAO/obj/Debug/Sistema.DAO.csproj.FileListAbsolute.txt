@@ -1,0 +1,10 @@
+D:\projetosCCharp\Sistema.View2017\Sistema.DAO\bin\Debug\Sistema.DAO.dll
+D:\projetosCCharp\Sistema.View2017\Sistema.DAO\bin\Debug\Sistema.DAO.pdb
+D:\projetosCCharp\Sistema.View2017\Sistema.DAO\bin\Debug\Sistema.Entidade.dll
+D:\projetosCCharp\Sistema.View2017\Sistema.DAO\bin\Debug\Sistema.Entidade.pdb
+D:\projetosCCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.csprojAssemblyReference.cache
+D:\projetosCCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.csproj.CoreCompileInputs.cache
+D:\projetosCCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.csproj.CopyComplete
+D:\projetosCCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.dll
+D:\projetosCCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.pdb
+D:\projetosCCharp\Sistema.View2017\Sistema.DAO\bin\Debug\Sistema.DAO.dll.config

@@ -1,0 +1,16 @@
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\bin\Debug\Sistema.View2017.exe.config
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\bin\Debug\Sistema.View2017.exe
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\bin\Debug\Sistema.View2017.pdb
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\obj\Debug\Sistema.View2017.csprojAssemblyReference.cache
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\obj\Debug\Sistema.View2017.Properties.Resources.resources
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\obj\Debug\Sistema.View2017.csproj.GenerateResource.cache
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\obj\Debug\Sistema.View2017.csproj.CoreCompileInputs.cache
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\obj\Debug\Sistema.View2017.exe
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\obj\Debug\Sistema.View2017.pdb
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\obj\Debug\Sistema.View2017.c.resources
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\obj\Debug\Sistema.View2017.frm_cadUsuario.resources
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\bin\Debug\Sistema.Entidade.dll
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\bin\Debug\Sistema.Model.dll
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\bin\Debug\Sistema.Entidade.pdb
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\bin\Debug\Sistema.Model.pdb
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\obj\Debug\Sistema.View2017.csproj.CopyComplete
