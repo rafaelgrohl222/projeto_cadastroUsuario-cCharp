@@ -47,6 +47,11 @@
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Senha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_codigo = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_buscar = new System.Windows.Forms.TextBox();
+            this.btn_buscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tbusuariosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_bancoMvcDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuario)).BeginInit();
@@ -56,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 23);
+            this.label1.Location = new System.Drawing.Point(159, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 16);
             this.label1.TabIndex = 0;
@@ -76,16 +81,16 @@
             // 
             this.txt_nome.Enabled = false;
             this.txt_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nome.Location = new System.Drawing.Point(83, 20);
+            this.txt_nome.Location = new System.Drawing.Point(210, 20);
             this.txt_nome.Name = "txt_nome";
-            this.txt_nome.Size = new System.Drawing.Size(451, 22);
+            this.txt_nome.Size = new System.Drawing.Size(338, 22);
             this.txt_nome.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(290, 51);
+            this.label3.Location = new System.Drawing.Point(298, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 16);
             this.label3.TabIndex = 3;
@@ -104,7 +109,7 @@
             // 
             this.txt_senha.Enabled = false;
             this.txt_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_senha.Location = new System.Drawing.Point(355, 48);
+            this.txt_senha.Location = new System.Drawing.Point(369, 48);
             this.txt_senha.Name = "txt_senha";
             this.txt_senha.PasswordChar = '*';
             this.txt_senha.Size = new System.Drawing.Size(179, 22);
@@ -115,7 +120,7 @@
             this.btn_novo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_novo.Location = new System.Drawing.Point(22, 88);
             this.btn_novo.Name = "btn_novo";
-            this.btn_novo.Size = new System.Drawing.Size(134, 29);
+            this.btn_novo.Size = new System.Drawing.Size(147, 29);
             this.btn_novo.TabIndex = 6;
             this.btn_novo.Text = "Novo";
             this.btn_novo.UseVisualStyleBackColor = true;
@@ -124,7 +129,7 @@
             // btn_salvar
             // 
             this.btn_salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salvar.Location = new System.Drawing.Point(162, 88);
+            this.btn_salvar.Location = new System.Drawing.Point(175, 88);
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.Size = new System.Drawing.Size(120, 29);
             this.btn_salvar.TabIndex = 7;
@@ -135,7 +140,7 @@
             // btn_excluir
             // 
             this.btn_excluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_excluir.Location = new System.Drawing.Point(288, 88);
+            this.btn_excluir.Location = new System.Drawing.Point(301, 88);
             this.btn_excluir.Name = "btn_excluir";
             this.btn_excluir.Size = new System.Drawing.Size(120, 29);
             this.btn_excluir.TabIndex = 8;
@@ -146,7 +151,7 @@
             // btn_editar
             // 
             this.btn_editar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_editar.Location = new System.Drawing.Point(414, 88);
+            this.btn_editar.Location = new System.Drawing.Point(428, 88);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(120, 29);
             this.btn_editar.TabIndex = 9;
@@ -178,11 +183,13 @@
             this.Nome,
             this.Usuario,
             this.Senha});
-            this.gridUsuario.Location = new System.Drawing.Point(13, 124);
+            this.gridUsuario.Location = new System.Drawing.Point(13, 162);
             this.gridUsuario.Name = "gridUsuario";
             this.gridUsuario.ReadOnly = true;
+            this.gridUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridUsuario.Size = new System.Drawing.Size(535, 214);
             this.gridUsuario.TabIndex = 10;
+            this.gridUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridUsuario_CellClick);
             // 
             // id
             // 
@@ -216,11 +223,64 @@
             this.Senha.ReadOnly = true;
             this.Senha.Width = 115;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(19, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 16);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Código:";
+            // 
+            // txt_codigo
+            // 
+            this.txt_codigo.Enabled = false;
+            this.txt_codigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_codigo.Location = new System.Drawing.Point(80, 20);
+            this.txt_codigo.Name = "txt_codigo";
+            this.txt_codigo.Size = new System.Drawing.Size(76, 22);
+            this.txt_codigo.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 133);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 16);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Buscar:";
+            // 
+            // txt_buscar
+            // 
+            this.txt_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_buscar.Location = new System.Drawing.Point(71, 130);
+            this.txt_buscar.Name = "txt_buscar";
+            this.txt_buscar.Size = new System.Drawing.Size(350, 22);
+            this.txt_buscar.TabIndex = 14;
+            // 
+            // btn_buscar
+            // 
+            this.btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buscar.Location = new System.Drawing.Point(428, 127);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(120, 29);
+            this.btn_buscar.TabIndex = 15;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            // 
             // frm_cadUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 350);
+            this.ClientSize = new System.Drawing.Size(560, 386);
+            this.Controls.Add(this.btn_buscar);
+            this.Controls.Add(this.txt_buscar);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txt_codigo);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.gridUsuario);
             this.Controls.Add(this.btn_editar);
             this.Controls.Add(this.btn_excluir);
@@ -264,5 +324,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Usuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Senha;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_codigo;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txt_buscar;
+        private System.Windows.Forms.Button btn_buscar;
     }
 }
