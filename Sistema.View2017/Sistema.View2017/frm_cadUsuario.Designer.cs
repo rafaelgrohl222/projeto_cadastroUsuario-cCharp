@@ -248,17 +248,18 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 133);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 16);
+            this.label5.Size = new System.Drawing.Size(93, 16);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Buscar:";
+            this.label5.Text = "Buscar Nome:";
             // 
             // txt_buscar
             // 
             this.txt_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_buscar.Location = new System.Drawing.Point(71, 130);
+            this.txt_buscar.Location = new System.Drawing.Point(111, 130);
             this.txt_buscar.Name = "txt_buscar";
-            this.txt_buscar.Size = new System.Drawing.Size(350, 22);
+            this.txt_buscar.Size = new System.Drawing.Size(310, 22);
             this.txt_buscar.TabIndex = 14;
+            this.txt_buscar.TextChanged += new System.EventHandler(this.txt_buscar_TextChanged);
             // 
             // btn_buscar
             // 

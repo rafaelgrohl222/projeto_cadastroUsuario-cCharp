@@ -234,5 +234,13 @@ namespace Sistema.View2017
             opc = "Buscar";
             iniciarOpc();
         }
+        //Toda vez campo estiver vazio ListarGridUsuario
+        private void txt_buscar_TextChanged(object sender, EventArgs e)
+        {
+            if(txt_buscar.Text == "")
+            {
+                ListarGridUsuario();
+            }
+        }
     }
 }

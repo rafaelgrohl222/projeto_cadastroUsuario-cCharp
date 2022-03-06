@@ -57,10 +57,18 @@ namespace Sistema.DAO
                 //Abrir a conexão
                 con.Open();
 
-                //Código BD
-                cn.CommandText = "SELECT * from tb_usuarios WHERE nome = @nome";//Busca todos registro da tabela ordem alfabetica
-                //Parâmetro
-                cn.Parameters.Add("nome", SqlDbType.VarChar).Value = objTabela.Nome;//passando valor q/ vem objTabela do campo
+                //Código BD - Busca Igual                        -> nome = @nome
+                //cn.CommandText = "SELECT * from tb_usuarios WHERE nome = @nome";//Busca todos registro da tabela identico
+
+                //Código BD - Busca Aproximada                  ->     LIKE
+                cn.CommandText = "SELECT * from tb_usuarios WHERE nome LIKE @nome";//Busca todos registro da tabela aproximada
+
+                //Parâmetro - Busca Igual
+                //cn.Parameters.Add("nome", SqlDbType.VarChar).Value = objTabela.Nome;//passando valor q/ vem objTabela do campo
+
+                //Parâmetro -                                                       Aprocimada "%"
+                cn.Parameters.Add("nome", SqlDbType.VarChar).Value = objTabela.Nome + "%";//Busca Aprocimada
+
                 //Associar cn.Command con.Connection
                 cn.Connection = con;
                 //Consultas
