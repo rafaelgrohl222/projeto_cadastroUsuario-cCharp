@@ -17,3 +17,4 @@ D:\projetosCCharp\Sistema.View2017\Sistema.View2017\obj\Debug\Sistema.View2017.p
 D:\projetosCCharp\Sistema.View2017\Sistema.View2017\bin\Debug\Sistema.DAO.dll
 D:\projetosCCharp\Sistema.View2017\Sistema.View2017\bin\Debug\Sistema.DAO.pdb
 D:\projetosCCharp\Sistema.View2017\Sistema.View2017\bin\Debug\Sistema.DAO.dll.config
+D:\projetosCCharp\Sistema.View2017\Sistema.View2017\obj\Debug\Sistema.View2017.frm_cadProdutos.resources

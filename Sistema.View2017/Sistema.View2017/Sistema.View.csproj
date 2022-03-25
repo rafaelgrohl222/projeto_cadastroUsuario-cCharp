@@ -51,6 +51,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db_bancoMvcDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frm_cadProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadProdutos.Designer.cs">
+      <DependentUpon>frm_cadProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_cadUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_cadProdutos.resx">
+      <DependentUpon>frm_cadProdutos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_cadUsuario.resx">
       <DependentUpon>frm_cadUsuario.cs</DependentUpon>
     </EmbeddedResource>

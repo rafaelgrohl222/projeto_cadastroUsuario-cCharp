@@ -52,6 +52,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txt_buscar = new System.Windows.Forms.TextBox();
             this.btn_buscar = new System.Windows.Forms.Button();
+            this.btn_produtos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tbusuariosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_bancoMvcDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuario)).BeginInit();
@@ -257,14 +258,14 @@
             this.txt_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_buscar.Location = new System.Drawing.Point(111, 130);
             this.txt_buscar.Name = "txt_buscar";
-            this.txt_buscar.Size = new System.Drawing.Size(310, 22);
+            this.txt_buscar.Size = new System.Drawing.Size(184, 22);
             this.txt_buscar.TabIndex = 14;
             this.txt_buscar.TextChanged += new System.EventHandler(this.txt_buscar_TextChanged);
             // 
             // btn_buscar
             // 
             this.btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_buscar.Location = new System.Drawing.Point(428, 127);
+            this.btn_buscar.Location = new System.Drawing.Point(301, 127);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(120, 29);
             this.btn_buscar.TabIndex = 15;
@@ -272,11 +273,23 @@
             this.btn_buscar.UseVisualStyleBackColor = true;
             this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
+            // btn_produtos
+            // 
+            this.btn_produtos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_produtos.Location = new System.Drawing.Point(428, 127);
+            this.btn_produtos.Name = "btn_produtos";
+            this.btn_produtos.Size = new System.Drawing.Size(120, 29);
+            this.btn_produtos.TabIndex = 16;
+            this.btn_produtos.Text = "Produtos";
+            this.btn_produtos.UseVisualStyleBackColor = true;
+            this.btn_produtos.Click += new System.EventHandler(this.btn_produtos_Click);
+            // 
             // frm_cadUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 386);
+            this.Controls.Add(this.btn_produtos);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.txt_buscar);
             this.Controls.Add(this.label5);
@@ -330,5 +343,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_buscar;
         private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.Button btn_produtos;
     }
 }

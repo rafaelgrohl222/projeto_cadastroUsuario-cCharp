@@ -12,13 +12,35 @@ using Sistema.Entidade;
 
 namespace Sistema.View2017
 {
-    public partial class frm_cadUsuario : Form
+    public partial class frm_cadProdutos : Form
     {
-        UsuarioEnt objTabela = new UsuarioEnt();
+        ProdutosEnt objTabela = new ProdutosEnt();
 
-        public frm_cadUsuario()
+        public frm_cadProdutos()
         {
             InitializeComponent();
+        }
+
+        //Método GridView Usuário
+        private void ListarGridProdutos()
+        {
+            try
+            {
+                //Objeto tipo List<UsuarioEnt> pertence
+                List<ProdutosEnt> lista = new List<ProdutosEnt>();//Listar usuario Entidade
+                lista = new ProdutoModel().Lista();//passando dados da list p/ UsuarioModel()
+                gridProdutos.AutoGenerateColumns = false;//Não gerar colunas auto (só quando existir)
+                gridProdutos.DataSource = lista;//DataSource recebe lista e mostra
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERRO ao listar Dados! " + ex.Message);
+            }
+        }
+        //ListarGridiProdutos
+        private void frm_cadProdutos_Load(object sender, EventArgs e)
+        {
+            ListarGridProdutos();
         }
 
         private void btn_novo_Click(object sender, EventArgs e)
@@ -26,6 +48,7 @@ namespace Sistema.View2017
             opc = "Novo";//passa valor p/ variavel
             iniciarOpc();//executar
         }
+
         private string opc = "";
 
         //Metodo iniciarOpc();
@@ -41,15 +64,16 @@ namespace Sistema.View2017
                 case "Salvar":
                     try
                     {
-                        objTabela.Nome = txt_nome.Text;
-                        objTabela.Usuario = txt_usuario.Text;
-                        objTabela.Senha = txt_senha.Text;
+                        objTabela.Produto = txt_produto.Text;
+                        objTabela.Descricao = txt_descricao.Text;
+                        objTabela.Valor = Convert.ToDecimal(txt_valor.Text);
+                        objTabela.Quantidades = Convert.ToInt32(txt_quantidades.Text);
 
-                        int x = UsuarioModel.Inserir(objTabela);//passando dados da objTabela p/ UsuarioModel
+                        int x = ProdutoModel.Inserir(objTabela);//passando dados da objTabela p/ UsuarioModel
 
-                        if(x > 0)
+                        if (x > 0)
                         {
-                            MessageBox.Show(string.Format("Usuário [ {0} ] FOI INSERIDO! ", txt_nome.Text));//string.Format converter
+                            MessageBox.Show(string.Format("Produto [ {0} ] FOI INSERIDO! ", txt_produto.Text));//string.Format converter
                         }
                         else
                         {
@@ -65,13 +89,13 @@ namespace Sistema.View2017
                 case "Excluir":
                     try
                     {
-                        objTabela.Id =  Convert.ToInt32(txt_codigo.Text);
+                        objTabela.Id = Convert.ToInt32(txt_codigoProduto.Text);
 
-                        int x = UsuarioModel.Excluir(objTabela);//passando dados da objTabela p/ UsuarioModel
+                        int x = ProdutoModel.Excluir(objTabela);//passando dados da objTabela p/ UsuarioModel
 
                         if (x > 0)
                         {
-                            MessageBox.Show(string.Format("Usuário [ {0} ] FOI EXCLUIDO! ", txt_nome.Text));//string.Format converter
+                            MessageBox.Show(string.Format("Produto [ {0} ] FOI EXCLUIDO! ", txt_produto.Text));//string.Format converter
                         }
                         else
                         {
@@ -87,16 +111,17 @@ namespace Sistema.View2017
                 case "Editar":
                     try
                     {
-                        objTabela.Id = Convert.ToInt32(txt_codigo.Text);
-                        objTabela.Nome = txt_nome.Text;
-                        objTabela.Usuario = txt_usuario.Text;
-                        objTabela.Senha = txt_senha.Text;
+                        objTabela.Id = Convert.ToInt32(txt_codigoProduto.Text);
+                        objTabela.Produto = txt_produto.Text;
+                        objTabela.Descricao = txt_descricao.Text;
+                        objTabela.Valor = Convert.ToDecimal(txt_valor.Text);
+                        objTabela.Quantidades = Convert.ToInt32(txt_quantidades.Text);
 
-                        int x = UsuarioModel.Editar(objTabela);//passando dados da objTabela p/ UsuarioModel
+                        int x = ProdutoModel.Editar(objTabela);//passando dados da objTabela p/ UsuarioModel
 
                         if (x > 0)
                         {
-                            MessageBox.Show(string.Format("Usuário [ {0} ] FOI EDITADO! ", txt_nome.Text));//string.Format converter
+                            MessageBox.Show(string.Format("Produto [ {0} ] FOI EDITADO! ", txt_produto.Text));//string.Format converter
                         }
                         else
                         {
@@ -112,14 +137,14 @@ namespace Sistema.View2017
                 case "Buscar":
                     try
                     {
-                        objTabela.Nome = txt_buscar.Text;
+                        objTabela.Produto = txt_produto.Text;
 
                         //Objeto tipo List<UsuarioEnt> pertence
-                        List<UsuarioEnt> lista = new List<UsuarioEnt>();//Listar usuario Entidade
-                        lista = new UsuarioModel().Buscar(objTabela);//passando dados da list p/ UsuarioModel()
+                        List<ProdutosEnt> lista = new List<ProdutosEnt>();//Listar usuario Entidade
+                        lista = new ProdutoModel().Buscar(objTabela);//passando dados da list p/ UsuarioModel()
 
-                        gridUsuario.AutoGenerateColumns = false;//Não gerar colunas auto (só quando existir)
-                        gridUsuario.DataSource = lista;//DataSource recebe lista e mostra
+                        gridProdutos.AutoGenerateColumns = false;//Não gerar colunas auto (só quando existir)
+                        gridProdutos.DataSource = lista;//DataSource recebe lista e mostra
                     }
                     catch (Exception ex)
                     {
@@ -132,33 +157,36 @@ namespace Sistema.View2017
         //Metodo HabilitarCampos();
         private void HabilitarCampos()
         {
-            txt_nome.Enabled = true;
-            txt_usuario.Enabled = true;
-            txt_senha.Enabled = true;
+            txt_produto.Enabled = true;
+            txt_descricao.Enabled = true;
+            txt_valor.Enabled = true;
+            txt_quantidades.Enabled = true;
         }
 
         //Metodo DesabilitarCampo
         private void DesabilitarCampos()
         {
-            txt_nome.Enabled = false;
-            txt_usuario.Enabled = false;
-            txt_senha.Enabled = false;
+            txt_produto.Enabled = false;
+            txt_descricao.Enabled = false;
+            txt_valor.Enabled = false;
+            txt_quantidades.Enabled = false;
         }
 
         //Metodo LimparCampos();
         private void LimparCampos()
         {
-            txt_nome.Text = "";
-            txt_usuario.Text = "";
-            txt_senha.Text = "";
-            txt_codigo.Text = "";
+            txt_produto.Text = "";
+            txt_descricao.Text = "";
+            txt_valor.Text = "";
+            txt_quantidades.Text = "";
+            txt_codigoProduto.Text = "";
         }
 
         private void btn_salvar_Click(object sender, EventArgs e)
         {
             opc = "Salvar";
             iniciarOpc();
-            ListarGridUsuario();//Litar dados ao cadastrar ao salvar na gridUsuario
+            ListarGridProdutos();//Litar dados ao cadastrar ao salvar na gridUsuario
             LimparCampos();//Limpar dados do campo ao salvar na grid
             DesabilitarCampos();//DesabilitarCampos ao clicar no botão "salvar"
         }
@@ -166,7 +194,7 @@ namespace Sistema.View2017
         private void btn_excluir_Click(object sender, EventArgs e)
         {
             //Selecionar a grid antes para excluir
-            if(txt_codigo.Text == "")
+            if (txt_codigoProduto.Text == "")
             {
                 MessageBox.Show("Selecionar um registro, na tabela para EXCLUIR!");
                 return;
@@ -174,7 +202,7 @@ namespace Sistema.View2017
 
             opc = "Excluir";
             iniciarOpc();
-            ListarGridUsuario();//Atualizar gridUsuario ao excluir
+            ListarGridProdutos();//Atualizar gridUsuario ao excluir
             DesabilitarCampos();//DesabilitarCampo ao excluir 
             LimparCampos();//LimparCampo ao excluir
         }
@@ -182,7 +210,7 @@ namespace Sistema.View2017
         private void btn_editar_Click(object sender, EventArgs e)
         {
             //Selecionar a grid antes para editar
-            if (txt_codigo.Text == "")
+            if (txt_codigoProduto.Text == "")
             {
                 MessageBox.Show("Selecionar um registro, na tabela para EDITAR!");
                 return;
@@ -190,56 +218,27 @@ namespace Sistema.View2017
 
             opc = "Editar";
             iniciarOpc();
-            ListarGridUsuario();
+            ListarGridProdutos();
             DesabilitarCampos();
             LimparCampos();
         }
-        
-        //Método GridView Usuário
-        private void ListarGridUsuario()
-        {
-            try
-            {
-                //Objeto tipo List<UsuarioEnt> pertence
-                List<UsuarioEnt>lista = new List<UsuarioEnt>();//Listar usuario Entidade
-                lista = new UsuarioModel().Lista();//passando dados da list p/ UsuarioModel()
-                gridUsuario.AutoGenerateColumns = false;//Não gerar colunas auto (só quando existir)
-                gridUsuario.DataSource = lista;//DataSource recebe lista e mostra
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ERRO ao listar Dados! " + ex.Message);
-            }
-        }
-        //2 cliques no formulário: Carregar a lista quando entrar
-        private void frm_cadUsuario_Load(object sender, EventArgs e)
-        {
-            ListarGridUsuario();//Carregar / exibir a lista quando entrar
-        }
 
-        //frm_cadUsuario/comportamento/SelectionModel/FullRowSelect - Seleção de toda linha
-        //Exibir dados da linha no form - Propridades CellClick
-        private void gridUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void gridProdutos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             //campo                       linha Atual na posição [0]
-            txt_codigo.Text = gridUsuario.CurrentRow.Cells[0].Value.ToString();
-            txt_nome.Text = gridUsuario.CurrentRow.Cells[1].Value.ToString();
-            txt_usuario.Text = gridUsuario.CurrentRow.Cells[2].Value.ToString();
-            txt_senha.Text = gridUsuario.CurrentRow.Cells[3].Value.ToString();
+            txt_codigoProduto.Text = gridProdutos.CurrentRow.Cells[0].Value.ToString();
+            txt_produto.Text = gridProdutos.CurrentRow.Cells[1].Value.ToString();
+            txt_descricao.Text = gridProdutos.CurrentRow.Cells[2].Value.ToString();
+            txt_valor.Text = gridProdutos.CurrentRow.Cells[3].Value.ToString();
+            txt_quantidades.Text = gridProdutos.CurrentRow.Cells[4].Value.ToString();
             HabilitarCampos();
         }
-        //Botão Buscar
-        private void btn_buscar_Click(object sender, EventArgs e)
-        {
-            opc = "Buscar";
-            iniciarOpc();
-        }
         //Toda vez campo estiver vazio ListarGridUsuario
-        private void txt_buscar_TextChanged(object sender, EventArgs e)
+        private void txt_buscarProdutos_TextChanged(object sender, EventArgs e)
         {
-            if(txt_buscar.Text == "")
+            if (txt_buscarProdutos.Text == "")
             {
-                ListarGridUsuario();
+                ListarGridProdutos();
                 return;//Busca dinâmica
             }
             //Busca dinâmica
@@ -252,6 +251,12 @@ namespace Sistema.View2017
             frm_cadProdutos frm_prod = new frm_cadProdutos();
             this.Hide();
             frm_prod.Show();
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            opc = "Buscar";
+            iniciarOpc();
         }
     }
 }

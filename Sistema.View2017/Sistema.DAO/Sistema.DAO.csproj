@@ -46,6 +46,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db_bancoMvcDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProdutoDAO.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
