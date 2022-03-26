@@ -10,3 +10,15 @@ D:\projetosCCharp\Sistema.View2017\Sistema.Model\bin\Debug\Sistema.DAO.pdb
 D:\projetosCCharp\Sistema.View2017\Sistema.Model\bin\Debug\Sistema.Entidade.pdb
 D:\projetosCCharp\Sistema.View2017\Sistema.Model\obj\Debug\Sistema.Model.csproj.CopyComplete
 D:\projetosCCharp\Sistema.View2017\Sistema.Model\bin\Debug\Sistema.DAO.dll.config
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Model\bin\Debug\Sistema.Model.dll
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Model\bin\Debug\Sistema.Model.pdb
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Model\bin\Debug\Sistema.DAO.dll
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Model\bin\Debug\Sistema.Entidade.dll
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Model\bin\Debug\Sistema.DAO.pdb
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Model\bin\Debug\Sistema.DAO.dll.config
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Model\bin\Debug\Sistema.Entidade.pdb
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Model\obj\Debug\Sistema.Model.csprojAssemblyReference.cache
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Model\obj\Debug\Sistema.Model.csproj.CoreCompileInputs.cache
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Model\obj\Debug\Sistema.Model.csproj.CopyComplete
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Model\obj\Debug\Sistema.Model.dll
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Model\obj\Debug\Sistema.Model.pdb

@@ -4,3 +4,9 @@ D:\projetosCCharp\Sistema.View2017\Sistema.Entidade\obj\Debug\Sistema.Entidade.c
 D:\projetosCCharp\Sistema.View2017\Sistema.Entidade\obj\Debug\Sistema.Entidade.csproj.CoreCompileInputs.cache
 D:\projetosCCharp\Sistema.View2017\Sistema.Entidade\obj\Debug\Sistema.Entidade.dll
 D:\projetosCCharp\Sistema.View2017\Sistema.Entidade\obj\Debug\Sistema.Entidade.pdb
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Entidade\bin\Debug\Sistema.Entidade.dll
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Entidade\bin\Debug\Sistema.Entidade.pdb
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Entidade\obj\Debug\Sistema.Entidade.csprojAssemblyReference.cache
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Entidade\obj\Debug\Sistema.Entidade.csproj.CoreCompileInputs.cache
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Entidade\obj\Debug\Sistema.Entidade.dll
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.Entidade\obj\Debug\Sistema.Entidade.pdb

@@ -156,6 +156,22 @@ namespace Sistema.View2017
 
         private void btn_salvar_Click(object sender, EventArgs e)
         {
+            if(txt_nome.Text == "")
+            {
+                MessageBox.Show("Campo vazio! Inserir (Nome) do usuário, para cadastrar!");
+                return;
+            }
+            if(txt_usuario.Text == "")
+            {
+                MessageBox.Show("Campo vazio! Inserir o (Usuário), para cadastrar!");
+                return;
+            }
+            if(txt_senha.Text == "")
+            {
+                MessageBox.Show("Campo vazio! Inserir (Senha) do usuário, para cadastrar!");
+                return;
+            }
+
             opc = "Salvar";
             iniciarOpc();
             ListarGridUsuario();//Litar dados ao cadastrar ao salvar na gridUsuario

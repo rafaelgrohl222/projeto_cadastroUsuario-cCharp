@@ -137,7 +137,7 @@ namespace Sistema.View2017
                 case "Buscar":
                     try
                     {
-                        objTabela.Produto = txt_produto.Text;
+                        objTabela.Produto = txt_buscarProdutos.Text;
 
                         //Objeto tipo List<UsuarioEnt> pertence
                         List<ProdutosEnt> lista = new List<ProdutosEnt>();//Listar usuario Entidade
@@ -184,6 +184,27 @@ namespace Sistema.View2017
 
         private void btn_salvar_Click(object sender, EventArgs e)
         {
+            if(txt_produto.Text == "")
+            {
+                MessageBox.Show("Campo vazio! Inserir (Nome) do Produto, para cadastrar!");
+                return;
+            }
+            if (txt_descricao.Text == "")
+            {
+                MessageBox.Show("Campo vazio! Inserir (Descriçãoa) do Produto, para cadastrar!");
+                return;
+            }
+            if (txt_valor.Text == "")
+            {
+                MessageBox.Show("Campo vazio! Inserir o (Valor) do Produto, para cadastrar!");
+                return;
+            }
+            if (txt_quantidades.Text == "")
+            {
+                MessageBox.Show("Campo vazio! Inserir (Quantidades) do Produto, para cadastrar!");
+                return;
+            }
+
             opc = "Salvar";
             iniciarOpc();
             ListarGridProdutos();//Litar dados ao cadastrar ao salvar na gridUsuario
@@ -257,6 +278,14 @@ namespace Sistema.View2017
         {
             opc = "Buscar";
             iniciarOpc();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frm_cadUsuario frm = new frm_cadUsuario();
+
+            this.Close();
+            frm.Show();
         }
     }
 }

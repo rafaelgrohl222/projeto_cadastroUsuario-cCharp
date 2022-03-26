@@ -53,6 +53,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_quantidades = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridProdutos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,7 +133,7 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gridProdutos.DefaultCellStyle = dataGridViewCellStyle4;
-            this.gridProdutos.Location = new System.Drawing.Point(6, 148);
+            this.gridProdutos.Location = new System.Drawing.Point(6, 185);
             this.gridProdutos.Name = "gridProdutos";
             this.gridProdutos.ReadOnly = true;
             this.gridProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -299,11 +300,23 @@
             this.label6.TabIndex = 32;
             this.label6.Text = "Qtd:";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(491, 148);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 29);
+            this.button1.TabIndex = 34;
+            this.button1.Text = "Usuário";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frm_cadProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 368);
+            this.ClientSize = new System.Drawing.Size(623, 407);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_quantidades);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_buscar);
@@ -358,5 +371,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantidades;
+        private System.Windows.Forms.Button button1;
     }
 }

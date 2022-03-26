@@ -8,3 +8,13 @@ D:\projetosCCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.csproj.Copy
 D:\projetosCCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.dll
 D:\projetosCCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.pdb
 D:\projetosCCharp\Sistema.View2017\Sistema.DAO\bin\Debug\Sistema.DAO.dll.config
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.DAO\bin\Debug\Sistema.DAO.dll.config
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.DAO\bin\Debug\Sistema.DAO.dll
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.DAO\bin\Debug\Sistema.DAO.pdb
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.DAO\bin\Debug\Sistema.Entidade.dll
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.DAO\bin\Debug\Sistema.Entidade.pdb
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.csprojAssemblyReference.cache
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.csproj.CoreCompileInputs.cache
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.csproj.CopyComplete
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.dll
+D:\projeto_cadastroUsuario-c#\projeto_cadastroUsuario-cCharp\projeto_cadastroUsuario-cCharp\Sistema.View2017\Sistema.DAO\obj\Debug\Sistema.DAO.pdb
